@@ -5,7 +5,7 @@
 # Filet 🍖
 A small temporary file utility for Go testing. Built on [Afero](https://github.com/spf13/afero) and heavily inspired by the way Afero tests itself.
 
-This is a fork of [https://github.com/Flaque/filet] maintained by [entropy](https://entropy.rocks)
+This is a fork of [this library](https://github.com/Flaque/filet) maintained by [entropy](https://entropy.rocks)
 
 Install via:
 `$ go get github.com/xplorfin/filet`
