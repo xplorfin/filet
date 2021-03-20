@@ -1,4 +1,4 @@
-module github.com/Flaque/filet
+module github.com/xplorfin/filet
 
 go 1.12
 

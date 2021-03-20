@@ -46,7 +46,6 @@ func TestTmpBinFile(t *testing.T) {
 		"TmpFile should create a file with content")
 }
 
-
 func TestFile(t *testing.T) {
 	defer CleanUp(t)
 

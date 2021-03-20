@@ -2,9 +2,10 @@ package filet
 
 import (
 	"bytes"
-	"github.com/spf13/afero"
 	"os"
 	"path/filepath"
+
+	"github.com/spf13/afero"
 )
 
 // TestReporter can be used to report test failures. It is satisfied by the standard library's *testing.T.
