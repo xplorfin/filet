@@ -1,4 +1,4 @@
-project_name: ozzo-validators
+project_name: filet-project
 build:
   skip: true
 checksum:
