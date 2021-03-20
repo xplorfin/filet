@@ -1,6 +1,6 @@
 module github.com/xplorfin/filet
 
-go 1.12
+go 1.13
 
 require (
 	github.com/spf13/afero v1.5.1
