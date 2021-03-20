@@ -1,20 +1,23 @@
-[![Build Status](https://travis-ci.org/Flaque/filet.svg?branch=master)](https://travis-ci.org/Flaque/filet)
+[![Build Status](https://travis-ci.org/xplorfin/filet.svg?branch=master)](https://travis-ci.org/xplorfin/filet)
 [![Go Report Card](https://goreportcard.com/badge/github.com/flaque/filet)](https://goreportcard.com/report/github.com/flaque/filet)
+[![Coverage Status](https://coveralls.io/repos/github/xplorfin/filet/badge.svg?branch=master)](https://coveralls.io/github/xplorfin/filet?branch=master)
 
 # Filet 🍖
 A small temporary file utility for Go testing. Built on [Afero](https://github.com/spf13/afero) and heavily inspired by the way Afero tests itself.
 
+This is a fork of [this library](https://github.com/Flaque/filet) maintained by [entropy](https://entropy.rocks)
+
 Install via:
-`$ go get github.com/Flaque/filet`
+`$ go get github.com/xplorfin/filet`
 
 Then import with:
 ```
 import (
-  filet "github.com/Flaque/filet"
+  filet "github.com/xplorfin/filet"
 )
 ```
 
-Quick overview at [GoDocs](https://godoc.org/github.com/Flaque/filet).
+Quick overview at [GoDocs](https://godoc.org/github.com/xplorfin/filet).
 
 ## Creating temporaries
 

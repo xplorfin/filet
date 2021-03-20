@@ -1,0 +1,21 @@
+project_name: filet-project
+build:
+  skip: true
+checksum:
+  name_template: checksums.txt
+snapshot:
+  name_template: '{{ .Tag }}-next'
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+release:
+  github:
+    owner: xplorfin
+    name: filet
+
+# add a source archive at release time
+source:
+  enabled: true

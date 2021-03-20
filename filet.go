@@ -2,9 +2,10 @@ package filet
 
 import (
 	"bytes"
-	"github.com/spf13/afero"
 	"os"
 	"path/filepath"
+
+	"github.com/spf13/afero"
 )
 
 // TestReporter can be used to report test failures. It is satisfied by the standard library's *testing.T.
@@ -41,6 +42,23 @@ func TmpFile(t TestReporter, dir string, content string) afero.File {
 	}
 
 	file.WriteString(content)
+	Files = append(Files, file.Name())
+
+	return file
+}
+
+/*
+TmpBinFile Creates a tmp file we can write byte slice to for us to use when testing
+*/
+func TmpBinFile(t TestReporter, dir string, content []byte) afero.File {
+	file, err := afero.TempFile(appFs, dir, "file")
+	defer file.Close()
+
+	if err != nil {
+		t.Error("Failed to create the tmpFile: "+file.Name(), err)
+	}
+
+	file.Write(content)
 	Files = append(Files, file.Name())
 
 	return file
